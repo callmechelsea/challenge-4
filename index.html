@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <title>Coding Quiz</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a href="highscore.html">View High Scores</a>
+      <div class="ml-auto">Time: <span id="time-left">75</span></div>
+    </nav>
+    <main class="container">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+          <div class="card mt-5">
+            <!--Before Quiz starts card  -->
+            <div class="card-body text-center" id="pre-quiz">
+              <h1><strong>Coding Quiz Challenge</strong></h1>
+              <p id="quiz-rules">
+                Try to answer the following code-related questions within the
+                time limit. Keep in mind that incorrect answers will penalize
+                your score/time by ten seconds!
+              </p>
+              <div>
+                <button class="btn btn-sm" id="start-button">Start Quiz</button>
+              </div>
+            </div>
+
+            <!-- Once quiz starts, text dynamically updated by script -->
+            <div class="card-body" id="quiz-questions">
+              <h2 id="question-text">Coding Quiz Challenge</h2>
+              <div>
+                <button class="btn btn-sm" id="btn1" data-index="1"></button>
+              </div>
+              <div>
+                <button class="btn btn-sm" id="btn2" data-index="2"></button>
+              </div>
+              <div>
+                <button class="btn btn-sm" id="btn3" data-index="3"></button>
+              </div>
+              <div>
+                <button class="btn btn-sm" id="btn4" data-index="4"></button>
+              </div>
+              <div id="check-answer">
+                <hr />
+                <span id="answer-text"></span>
+              </div>
+            </div>
+
+            <!-- End screen to save high score -->
+            <div class="card-body" id="quiz-end-screen">
+              <h2 id="question-text">Congratulations on completing the Quiz</h2>
+              <h3>Your score is <span id="user-score"></span></h3>
+              <form>
+                <label for="initials">Initials:</label><br />
+                <input type="text" id="initials" name="initials" /><br />
+              </form>
+              <div>
+                <button class="btn btn-sm" id="save-score">
+                  Save High Score
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/questions.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+
+a {
+    color: #90a13f;
+  }
+  
+  a:hover {
+    color: #a17d3f;
+  }
+  
+  .btn.btn-sm {
+    background-color: #90a13f;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+
+  /* hidden Divs that are updated throughout by questions.js */
+  #quiz-questions,
+  #quiz-end-screen, 
+  #check-answer {
+    display: none;
+  }
+  
+  input {
+      margin-bottom: 5px;
+  }
+  
+  #answer-text{
+      color: #2a6582;
+      font-style: italic;
+  
+  }
+  
+  /* high score page specific */
+  #score-list p:nth-child(odd){
+      background-color: #acb8a0;
+  }
+
+  
