@@ -1,4 +1,10 @@
 
+body {
+  font-family: 'Lora', serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Tinos', serif;
+}
+
 a {
     color: #90a13f;
   }
